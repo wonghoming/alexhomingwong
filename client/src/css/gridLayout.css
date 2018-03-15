@@ -1,0 +1,141 @@
+/*==============================
+Grid Layout CSS
+==============================*/
+/*The box sizing makes the padding & border included in the width*/
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+.box-container-fluid {
+	width: 100%;
+	max-width: 100%;
+}
+.box-container {
+	width: 1140px;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.flex{
+	display: flex;
+}
+.img-fluid{
+	width:100%;
+}
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+	padding-left:5px;
+	padding-right:5px;
+}
+[class*="col-1"] {
+	width: 12.5%;
+}
+[class*="col-2"] {
+	width: 25%;
+}
+[class*="col-3"] {
+	width: 37.5%;
+}
+[class*="col-4"] {
+	width: 50%;
+}
+[class*="col-5"] {
+	width: 62.5%;
+}
+[class*="col-6"] {
+	width: 75%;
+}
+[class*="col-7"] {
+	width: 87.5%;
+}
+[class*="col-8"] {
+	width: 100%;
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+	.box-container {
+		width: 960px;
+		max-width: 960px;
+	}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	.box-container {
+		width: 720px;
+		max-width: 720px;
+	}
+	[class*="col-m-1"] {
+		width: 12.5%;
+	}
+	[class*="col-m-2"] {
+		width: 25%;
+	}
+	[class*="col-m-3"] {
+		width: 37.5%;
+	}
+	[class*="col-m-4"] {
+		width: 50%;
+	}
+	[class*="col-m-5"] {
+		width: 62.5%;
+	}
+	[class*="col-m-6"] {
+		width: 75%;
+	}
+	[class*="col-m-7"] {
+		width: 87.5%;
+	}
+	[class*="col-m-8"] {
+		width: 100%;
+	}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.box-container {
+		width: 540px;
+		max-width: 540px;
+	}
+	[class*="col-s-1"] {
+		width: 12.5%;
+	}
+	[class*="col-s-2"] {
+		width: 25%;
+	}
+	[class*="col-s-3"] {
+		width: 37.5%;
+	}
+	[class*="col-s-4"] {
+		width: 50%;
+	}
+	[class*="col-s-5"] {
+		width: 62.5%;
+	}
+	[class*="col-s-6"] {
+		width: 75%;
+	}
+	[class*="col-s-7"] {
+		width: 87.5%;
+	}
+	[class*="col-s-8"] {
+		width: 100%;
+	}
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.box-container {
+		width: 100%;
+		max-width: 100%;
+		padding: 10% 10px;
+	}
+}

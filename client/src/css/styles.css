@@ -1,0 +1,521 @@
+/*==============================
+General CSS
+==============================*/
+html,
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	color: #333333;
+	font-size: 16px;
+	line-height: 22px;
+}
+.fullHeight {
+	height: 100%;
+}
+.box-container {
+	padding: 5% 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+}
+/*==============================
+NavBar CSS
+==============================*/
+.navBar {
+	color: #ffffff;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.navBar ul {
+	list-style: none;
+	padding: 0 10px;
+	margin: 25px 0;
+}
+.navBar ul li {
+	margin: 15px 0;
+	position: relative;
+	font-size: 20px;
+	line-height: 22px;
+	text-align: center;
+}
+.navBar ul li:nth-child(2) {
+	font-size: 30px;
+}
+.navBar ul li:hover {
+	cursor: pointer;
+}
+/*==============================
+Landing CSS
+==============================*/
+.mainBg {
+	height: 100%;
+	width: 100%;
+	background: radial-gradient(circle, #1e436a, #0f2f51, #0f2f51, #0f2f51);
+}
+.icon {
+	width: 200px;
+	animation-name: monkey;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.iconWrapper {
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-70%);
+}
+.logo {
+	width: 130px;
+}
+.strapLine {
+	width: 100%;
+	text-align: center;
+	margin: 20px 0 0;
+	color: #ffffff;
+	font-size: 28px;
+}
+.strapLine h5 {
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 15px 0;
+}
+.strapLine h5 span {
+	color: #0b6eaa;
+}
+.strapLine .icon {
+	width: 100%;
+}
+.logoWrapper {
+	text-align: center;
+	width: 50%;
+	position: absolute;
+	bottom: 8%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.logoWrapper > div {
+	margin: 10px auto 0;
+	font-size: 40px;
+	color: #ffffff;
+	width: 50px;
+	transition: all ease 0.3s;
+}
+.logoWrapper div:hover {
+	transform: translateY(15%);
+	cursor: pointer;
+}
+.pointer a{
+	color:#ffffff;
+}
+/*==============================
+Profile CSS
+==============================*/
+.box-container.profile {
+	padding-bottom: 0;
+	overflow: hidden;
+}
+.profile .name {
+	width: 100%;
+	padding-left: 5px;
+}
+.profile .name p {
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.profile .name hr {
+	width: 50px;
+	margin: 10px 0;
+	border-top: 2px solid #5f5c5d;
+}
+.heading h2 {
+	font-size: 26px;
+	line-height: normal;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+.text {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #5f5c5d;
+}
+.text p {
+	z-index: 5;
+	position: relative;
+}
+.skillsWrapper {
+	width: 100%;
+	z-index: 1;
+	transform: rotate(45deg);
+	margin: 0;
+	padding: 80px 0 130px;
+}
+.diamondRow {
+	display: flex;
+	justify-content: center;
+}
+.diamond {
+	position: relative;
+	height: 170px;
+	width: 170px;
+	text-align: center;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	transition: all ease 0.3s;
+}
+.diamond.outline:after {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	content: "";
+	height: calc(100% - 10px);
+	width: calc(100% - 10px);
+	border: 1px solid #ffffff;
+}
+.diamondText {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	color: #ffffff;
+	transform: rotate(-45deg);
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.diamondText p.diamondTitle {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 22px;
+	text-transform: uppercase;
+	margin: 0 auto;
+	transition: all ease 0.4s;
+}
+.diamondText p.diamondTitle svg {
+	margin-bottom: 10px;
+}
+.diamondText div.caption {
+	width: 100%;
+	padding: 0 20px;
+	position: absolute;
+	top: 150%;
+	transition: all ease 0.4s;
+}
+.diamondText div.caption hr {
+	width: 10%;
+}
+.diamond:hover p.diamondTitle {
+	margin-top: -80px;
+}
+.diamond:hover div.caption {
+	top: 50%;
+}
+.diamond.blue-bg:hover {
+	transform: translate(10%, -10%);
+	height: 210px;
+	width: 210px;
+	margin: -10px;
+}
+.diamond.darkBlue-bg:hover {
+	transform: translate(-10%, 10%);
+	height: 210px;
+	width: 210px;
+	margin: -10px;
+}
+.diamond.red-bg:hover {
+	transform: translate(10%, 10%);
+	height: 210px;
+	width: 210px;
+	margin: -10px;
+}
+.diamondText img {
+	width: 40%;
+	margin: 0 auto;
+}
+/* ==============================
+WaterColourMonkey CSS
+============================== */
+.iconPattern {
+	position: relative;
+	overflow: hidden;
+}
+.circleWrapper {
+	width: 100%;
+	margin: 0 0 50px 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+}
+.circle {
+	width: 50px;
+	opacity: 0.6;
+}
+/*==============================
+SlideShow CSS
+==============================*/
+.slideshowWrapper {
+	position: relative;
+	margin: 20px 0;
+}
+.slide {
+	transition: all 2s ease;
+}
+.imgWrapper {
+}
+.label {
+	position: absolute;
+	background-color: #d1314d;
+	padding: 10px 20px;
+	top: 5%;
+	z-index: 5;
+}
+.label a {
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+.markers {
+	position: absolute;
+	bottom: 0;
+	width: 5%;
+}
+.markers ul {
+	list-style: none;
+	padding: 0 0 50%;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+}
+.markers ul li {
+	height: 15px;
+	width: 55%;
+	margin: 5px 0;
+	background-color: #d1314d;
+	transition: all ease 1s;
+}
+.markers ul li:hover{
+	cursor:pointer;
+}
+.absolute {
+	position: absolute;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+.fadeIn {
+	visibility: visible;
+	opacity: 1;
+}
+/*==============================
+Footer CSS
+==============================*/
+.footer{
+	display: flex;
+	padding:10px 40px;
+	font-size: 12px;
+	color:#ffffff;
+	justify-content: space-between;
+}
+.social{
+	font-size:17px;
+}
+.social a{
+	margin:0 7px;
+	color:#ffffff;
+}
+/* ==============================
+Theme CSS
+============================== */
+.blue-bg {
+	background-color: #0b6eaa;
+}
+.blue {
+	color: #0b6eaa;
+}
+.darkBlue-bg {
+	background-color: #0f2f51;
+}
+.darkBlue {
+	color: #0f2f51;
+}
+.red-bg {
+	background-color: #d1314d;
+}
+.red {
+	color: #d1314d;
+}
+.grey-bg {
+	background-color: #5f5c5d;
+}
+.grey {
+	color: #5f5c5d;
+}
+.lightGrey-bg {
+	background-color: #e4e2e2;
+}
+.white {
+	color: #fff;
+}
+.subtle-bg {
+	background-color: #f2f5fa;
+}
+/* ==============================
+Contact CSS
+============================== */
+.box-container.contact {
+	text-align: center;
+	color: #ffffff;
+	padding: 100px 0;
+}
+.box-container.contact p {
+	margin-bottom: 30px;
+}
+.box-container.contact h2 {
+	letter-spacing: 2px;
+	font-size: 30px;
+}
+.box-container.contact hr {
+	width: 10%;
+	margin: 80px auto 10px;
+}
+/* ==============================
+Animation CSS
+============================== */
+@keyframes monkey {
+	0% {
+		transform: translateY(0%);
+	}
+	40% {
+		transform: translateY(-10%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+/* ==============================
+Media Queries
+============================== */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	.flex {
+		flex-wrap: wrap;
+	}
+	.diamond.blue-bg {
+		transform: translate(10%, -10%);
+		height: 210px;
+		width: 210px;
+		margin: -10px;
+	}
+	.diamond.darkBlue-bg {
+		transform: translate(-10%, 10%);
+		height: 210px;
+		width: 210px;
+		margin: -10px;
+	}
+	.diamond.red-bg {
+		transform: translate(10%, 10%);
+		height: 210px;
+		width: 210px;
+		margin: -10px;
+	}
+	.diamond p.diamondTitle {
+		margin-top: -80px;
+	}
+	.diamond div.caption {
+		top: 50%;
+	}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.navBar {
+		display: none;
+	}
+	.circleWrapper {
+		width: 100%;
+	}
+	.circle {
+		width: 30px;
+		height: 30px;
+	}
+	.box-container.profile {
+		padding-top: 50px;
+	}
+	.skillsWrapper {
+		width: 100%;
+		transform: rotate(0deg);
+		margin: 0;
+		padding:10px 0 50px;
+	}
+	.diamondRow {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.diamond {
+		width: 100% !important;
+		margin: 10px 0 !important;
+		transform: translate(0) !important;
+		padding: 20px 10px;
+	}
+	.diamond.grey-bg {
+		display: none;
+	}
+	.diamondText {
+		transform: rotate(0deg);
+	}
+	.diamondText p.diamondTitle {
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 22px;
+		width: 100%;
+		text-align: center;
+		transition: all ease 0.4s;
+		margin: -50px auto 0 !important;
+		text-transform: uppercase;
+	}
+	.diamondText div.caption hr {
+		width: 10%;
+	}
+	.diamondText p.diamondTitle svg {
+		margin-bottom: 10px;
+	}
+	.diamondText div.caption {
+		position: absolute;
+		top: 60%;
+	}
+	.diamond:hover div.caption {
+		top: 60%;
+	}
+	.label {
+		position: static;
+		padding: 5px 15px;
+	}
+	.label a {
+		font-size: 14px;
+	}
+	.markers {
+		display: none;
+	}
+}
